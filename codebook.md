@@ -84,7 +84,7 @@ tBodyGyroJerkMean
 
 The set of features is reduced by the script, so that while all the original feature vector patterns were retained, ie:
 
-**feature vector patterns:**
+**feature vector patterns:**  
 tBodyAcc-XYZ  
 tGravityAcc-XYZ  
 tBodyAccJerk-XYZ  
@@ -105,7 +105,7 @@ fBodyGyroJerkMag
 
 the set of varaibles estimated from these signals was reduced from the above to only two types:
 
-**estimated variables**
+**estimated variables**  
 mean(): Mean value  
 std(): Standard deviation    
 
@@ -121,7 +121,7 @@ Two of the variable names are purely descriptive of the source of the observatio
 
 "subjectID" is an integer identifying the subject who carried out the corresponding activity and from which the corresponding measurements were taken (range from 1 to 30)
 
-"activity" is the nature of the activity undertaken against which the measurements have been taken, there are 6 of these:
+"activity" is the nature of the activity undertaken against which the measurements have been taken, there are 6 of these:  
 "LAYING"  
 "SITTING"  
 "STANDING"  
@@ -419,7 +419,7 @@ giving a total of 33 unique feature vector patterns, for each of which there is 
 "tBodyGyroJerkMag.max.."  
 "tBodyGyroJerkMag.min.."  
 "tBodyGyroJerkMag.sma.."  
-"tBodyGyroJerkMag.energy.."  
+"tBodyGyroJerkMag.energy.."    
 "tBodyGyroJerkMag.iqr.."  
 "tBodyGyroJerkMag.entropy.."  
 "tBodyGyroJerkMag.arCoeff..1"  
