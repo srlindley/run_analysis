@@ -157,6 +157,15 @@ The 66 data variables reflect the following combinations
 
 giving a total of 33 unique feature vector patterns, for each of which there is a "mean" or "std" measure, for a total of 66 data variables 
 
+
+## Summaries calculated
+
+The final data set produced calculates a mean value for each of the 66 data variables (as described above and listed in the final section below) for each unique combination of activity and subject ID.  This gives a resulting data set of dimensions:  
+180 rows (observations) being 6 activity measures for each of which there are 30 subject IDs leading to 180 unique combinations.  
+68 fields being the 66 data variables plus subject ID and activty columns.
+Units of measurement were unchanged from the original dataset.  No additional normalisation or transformation of data values was carried out other than the calculation of means as a summary value and as described above.
+
+
 ## Full variables list prior to restricting to mean and standard deviation
 
 "subjectID"  
