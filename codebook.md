@@ -21,6 +21,10 @@ The operation of the script to carry out these activities is explained in the co
 
 ## Variable (feature) selection
 
+### Original full features
+
+The following explanation is as per the original original codebook "features_info.txt"
+
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -76,9 +80,54 @@ tBodyAccJerkMean
 tBodyGyroMean  
 tBodyGyroJerkMean  
 
+### Reduced set of features for final dataset
+
+The set of features is reduced by the script, so that while all the original feature vector patterns were retained, ie:
+
+tBodyAcc-XYZ  
+tGravityAcc-XYZ  
+tBodyAccJerk-XYZ  
+tBodyGyro-XYZ  
+tBodyGyroJerk-XYZ  
+tBodyAccMag  
+tGravityAccMag  
+tBodyAccJerkMag  
+tBodyGyroMag  
+tBodyGyroJerkMag  
+fBodyAcc-XYZ  
+fBodyAccJerk-XYZ  
+fBodyGyro-XYZ  
+fBodyAccMag  
+fBodyAccJerkMag  
+fBodyGyroMag  
+fBodyGyroJerkMag  
+
+the set of varaibles estimated from these signals was reduced from the above to only two types:
+
+mean(): Mean value  
+std(): Standard deviation    
+
 ## Explanation of variable naming
 
+Variable names are based on combining the feature vector pattern names with the estimed variable name (ie mean or std in final data set) and if appropriate the dimension (X, Y, Z).
 
+Variable naming in the tidy data set is derived from the variable naming used in the original dataset (which are readable and understandable based on the above explanation) with formatting to make them valid names in R (ie removing special characters notably parantheses and dashes).
+
+For the final dataset there are therefore 68 variable name combinations:
+
+Two of the variable names are purely descriptive of the source of the observation:
+
+"subjectID" is an integer identifying the subject who carried out the corresponding activity and from which the corresponding measurements were taken (range from 1 to 30)
+
+"activity" is the nature of the activity undertaken against which the measurements have been taken, there are 6 of these:
+"LAYING"  
+"SITTING"  
+"STANDING"  
+"WALKING"           
+"WALKING_DOWNSTAIRS"  
+"WALKING_UPSTAIRS"
+
+The remaining 66 variable names reflect the pattern
 
 ## Full variables list prior to restricting to mean and standard deviation
 
