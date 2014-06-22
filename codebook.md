@@ -165,6 +165,14 @@ The final data set produced calculates a mean value for each of the 66 data vari
 68 fields being the 66 data variables plus subject ID and activty columns.
 Units of measurement were unchanged from the original dataset.  No additional normalisation or transformation of data values was carried out other than the calculation of means as a summary value and as described above.
 
+## Transformation and clean up work on the data
+
+The README.MD file corresponding to this codebook provides explanation of the script and rationale for the way it operates.  The explanation for the variable naming has been covered above in this codebook.  This transformation and tidy up used the R make.names function.  
+
+The "reshape2" library was used for melting and casting the data frame for the final data set.
+
+More details are in the README file.
+
 
 ## Full variables list prior to restricting to mean and standard deviation
 
