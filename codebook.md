@@ -708,7 +708,7 @@ giving a total of 33 unique feature vector patterns, for each of which there is 
 "fBodyBodyGyroJerkMag.max.."  
 "fBodyBodyGyroJerkMag.min.."  
 "fBodyBodyGyroJerkMag.sma.."  
-"fBodyBodyGyroJerkMag.energy..  "
+"fBodyBodyGyroJerkMag.energy.."  
 "fBodyBodyGyroJerkMag.iqr.."  
 "fBodyBodyGyroJerkMag.entropy.."  
 "fBodyBodyGyroJerkMag.maxInds"  
