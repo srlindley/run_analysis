@@ -103,7 +103,7 @@ fBodyAccJerkMag
 fBodyGyroMag  
 fBodyGyroJerkMag  
 
-the set of varaibles estimated from these signals was reduced from the above to only two types:
+the set of variables estimated from these signals was reduced from the original list to only two types:
 
 **estimated variables**  
 mean(): Mean value  
@@ -152,7 +152,7 @@ The dot pattern in the dimmension component of the variable could have been simp
 
 The 66 data variables reflect the following combinations
 
-8 feature vector patterns with one of three possible dimensions (X, Y, Z) ie giving 24 unique patterns
+8 feature vector patterns with one of three possible dimensions (X, Y, Z) ie giving 24 unique patterns  
 9 feature vector patterns without any dimension 
 
 giving a total of 33 unique feature vector patterns, for each of which there is a "mean" or "std" measure, for a total of 66 data variables 
