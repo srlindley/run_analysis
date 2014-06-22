@@ -84,6 +84,7 @@ tBodyGyroJerkMean
 
 The set of features is reduced by the script, so that while all the original feature vector patterns were retained, ie:
 
+**feature vector patterns:**
 tBodyAcc-XYZ  
 tGravityAcc-XYZ  
 tBodyAccJerk-XYZ  
@@ -104,6 +105,7 @@ fBodyGyroJerkMag
 
 the set of varaibles estimated from these signals was reduced from the above to only two types:
 
+**estimated variables**
 mean(): Mean value  
 std(): Standard deviation    
 
@@ -127,7 +129,33 @@ Two of the variable names are purely descriptive of the source of the observatio
 "WALKING_DOWNSTAIRS"  
 "WALKING_UPSTAIRS"
 
-The remaining 66 variable names reflect the pattern
+The remaining 66 variable names reflect the pattern "featurevectorpattern"."estimatedvariable"."dimension"
+
+where the feature vector pattern and estimated variable are as per the lists above and the dimension is coded as follows:
+
+X as "...X"
+Y as "...Y"
+Z as "...Z"
+None as ".."
+
+for example: 
+
+"tBodyAcc.mean...X"  is the feature vector pattern tBodyAcc and this is the estimated mean for the X dimension.
+
+This naming scheme enables the use and modification of the original coding book without major rework, while remaining intelligible to anyone already familiar with the naming of the original data set.
+
+The dot pattern in the dimmension component of the variable could have been simplified to remove 2 of the 3 dots, this was not done for two reasons:
+1) When reviewing a list of the variable names the visibility of the dimension and readability of the name is much clearer because of the additional spacing provided by these additional dots 
+
+2) The generation/ translation of variable names follows a standard pattern for all variable names from the original dataset, which is completed by the make.names function in R.  This makes it a simple reproducible process that will work for any subsequent datasets that may incorporate additional names/ dimensions without any subjectivity and resulting differences in comparability between users.
+
+
+The 66 data variables reflect the following combinations
+
+8 feature vector patterns with one of three possible dimensions (X, Y, Z) ie giving 24 unique patterns
+9 feature vector patterns without any dimension 
+
+giving a total of 33 unique feature vector patterns, for each of which there is a "mean" or "std" measure, for a total of 66 data variables 
 
 ## Full variables list prior to restricting to mean and standard deviation
 
